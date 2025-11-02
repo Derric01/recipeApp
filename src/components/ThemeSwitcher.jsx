@@ -27,17 +27,17 @@ const ThemeSwitcher = () => {
 	};
 
 	return (
-		<div className="dropdown dropdown-end">
+		<div className="dropdown dropdown-bottom dropdown-end">
 			<div 
 				tabIndex={0} 
 				role="button" 
-				className="btn btn-circle btn-ghost min-h-[44px] min-w-[44px] hover:bg-base-200"
+				className="btn btn-circle btn-ghost min-h-[44px] min-w-[44px] hover:bg-base-200 touch-manipulation"
 			>
 				<Palette size={24} className="sm:w-5 sm:h-5" />
 			</div>
 			<ul
 				tabIndex={0}
-				className="dropdown-content menu bg-base-100 rounded-box z-[1] w-56 sm:w-52 p-3 shadow-2xl border-2 border-base-300 max-h-96 overflow-y-auto flex-nowrap mt-2"
+				className="dropdown-content menu bg-base-100 rounded-box z-[9999] w-56 sm:w-52 p-3 shadow-2xl border-2 border-base-300 max-h-96 overflow-y-auto flex-nowrap mt-2"
 			>
 				<li className="menu-title px-3 py-2">
 					<span className="text-sm font-bold">Choose Theme</span>
