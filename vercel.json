@@ -3,9 +3,5 @@
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "vite",
-  "env": {
-    "VITE_APP_ID": "098860c2",
-    "VITE_APP_KEY": "a070a4e3b089562569a89a7c5779b911"
-  }
+  "framework": "vite"
 }
