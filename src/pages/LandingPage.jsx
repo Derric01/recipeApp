@@ -1,6 +1,7 @@
 import { Heart, Search, Sparkles, UtensilsCrossed, Flame, BookOpen, ChefHat } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const LandingPage = () => {
 	const [scrollY, setScrollY] = useState(0);
@@ -23,10 +24,13 @@ const LandingPage = () => {
 								FlavorFinder
 							</span>
 						</div>
-						<Link to='/home' className='btn btn-xs sm:btn-sm btn-primary min-h-[44px] min-w-[44px]'>
-							<span className='hidden sm:inline'>Explore</span>
-							<Search className='w-4 h-4 sm:hidden' />
-						</Link>
+						<div className='flex items-center gap-2 sm:gap-3'>
+							<ThemeSwitcher />
+							<Link to='/home' className='btn btn-xs sm:btn-sm btn-primary min-h-[44px] min-w-[44px]'>
+								<span className='hidden sm:inline'>Explore</span>
+								<Search className='w-4 h-4 sm:hidden' />
+							</Link>
+						</div>
 					</div>
 				</div>
 			</nav>
