@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import RecipeCard from "../components/RecipeCard";
 import { useEffect, useState } from "react";
 import { getRandomColor } from "../lib/utils";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const APP_ID = import.meta.env.VITE_APP_ID;
 const APP_KEY = import.meta.env.VITE_APP_KEY;
@@ -73,10 +74,18 @@ const HomePage = () => {
 				{/* Enhanced Search Section */}
 				<div className='mb-6 sm:mb-8 animate-fade-in'>
 					<div className='text-center mb-4 sm:mb-6'>
-						<h1 className='font-bold text-3xl sm:text-4xl md:text-6xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2 sm:mb-3'>
-							Recipe Finder
-						</h1>
-						<p className='text-base-content/70 text-base sm:text-lg px-4'>Discover delicious recipes for every occasion</p>
+						<div className='flex justify-between items-start mb-4'>
+							<div className='flex-1'></div>
+							<div className='flex-1 text-center'>
+								<h1 className='font-bold text-3xl sm:text-4xl md:text-6xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2 sm:mb-3'>
+									Recipe Finder
+								</h1>
+								<p className='text-base-content/70 text-base sm:text-lg px-4'>Discover delicious recipes for every occasion</p>
+							</div>
+							<div className='flex-1 flex justify-end'>
+								<ThemeSwitcher />
+							</div>
+						</div>
 					</div>
 					
 					<form onSubmit={handleSearchRecipe} className='max-w-2xl mx-auto px-2 sm:px-0'>

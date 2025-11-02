@@ -1,6 +1,5 @@
 import { Heart, Home } from "lucide-react";
 import { Link } from "react-router-dom";
-import ThemeSwitcher from "./ThemeSwitcher";
 
 const Sidebar = () => {
 	return (
@@ -16,12 +15,9 @@ const DesktopSidebar = () => {
 	return (
 		<div className='p-3 md:p-10 border-r border-base-300 min-h-screen w-24 md:w-64 hidden sm:block bg-base-100'>
 			<div className='flex flex-col gap-20 sticky top-10 left-0'>
-				<div className='w-full flex items-center justify-between'>
+				<div className='w-full flex items-center justify-center'>
 					<img src='/logo.svg' alt='logo' className='hidden md:block hover:scale-105 transition-transform duration-300' />
 					<img src='/mobile-logo.svg' alt='logo' className='block md:hidden hover:scale-105 transition-transform duration-300' />
-					<div className='md:ml-auto'>
-						<ThemeSwitcher />
-					</div>
 				</div>
 				<ul className='flex flex-col items-center md:items-start gap-8'>
 					<Link to={"/home"} className='flex gap-3 items-center text-base-content hover:text-purple-600 transition-colors duration-200 group'>
@@ -63,10 +59,6 @@ const MobileSidebar = () => {
 				<Heart size={"26"} className='cursor-pointer hover:text-pink-600' />
 				<span className='text-xs font-semibold'>Favorites</span>
 			</Link>
-			<div className='flex flex-col items-center gap-1 p-3 rounded-xl min-w-[80px]'>
-				<ThemeSwitcher />
-				<span className='text-xs font-semibold'>Theme</span>
-			</div>
 		</div>
 	);
 };
