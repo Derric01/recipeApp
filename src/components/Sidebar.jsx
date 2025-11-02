@@ -45,17 +45,28 @@ const DesktopSidebar = () => {
 const MobileSidebar = () => {
 	return (
 		<div
-			className='flex justify-between items-center gap-6 border-t border-base-300 fixed w-full
-			bottom-0 left-0 bg-base-100 z-10 p-4 sm:hidden shadow-lg
+			className='flex justify-around items-center gap-2 border-t-2 border-base-300 fixed w-full
+			bottom-0 left-0 bg-base-100 z-10 px-4 py-3 sm:hidden shadow-2xl backdrop-blur-lg bg-opacity-95
 		'
 		>
-			<Link to={"/home"} className='p-2 hover:bg-purple-100 rounded-lg transition-all duration-200'>
-				<Home size={"24"} className='cursor-pointer hover:text-purple-600' />
+			<Link 
+				to={"/home"} 
+				className='flex flex-col items-center gap-1 p-3 hover:bg-purple-100 rounded-xl transition-all duration-200 min-w-[80px] active:scale-95 touch-manipulation'
+			>
+				<Home size={"26"} className='cursor-pointer hover:text-purple-600' />
+				<span className='text-xs font-semibold'>Home</span>
 			</Link>
-			<Link to={"/favorites"} className='p-2 hover:bg-pink-100 rounded-lg transition-all duration-200'>
-				<Heart size={"24"} className='cursor-pointer hover:text-pink-600' />
+			<Link 
+				to={"/favorites"} 
+				className='flex flex-col items-center gap-1 p-3 hover:bg-pink-100 rounded-xl transition-all duration-200 min-w-[80px] active:scale-95 touch-manipulation'
+			>
+				<Heart size={"26"} className='cursor-pointer hover:text-pink-600' />
+				<span className='text-xs font-semibold'>Favorites</span>
 			</Link>
-			<ThemeSwitcher />
+			<div className='flex flex-col items-center gap-1 p-2'>
+				<ThemeSwitcher />
+				<span className='text-xs font-semibold'>Theme</span>
+			</div>
 		</div>
 	);
 };
