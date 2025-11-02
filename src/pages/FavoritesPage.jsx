@@ -1,6 +1,5 @@
 import RecipeCard from "../components/RecipeCard";
 import { getRandomColor } from "../lib/utils";
-import ThemeSwitcher from "../components/ThemeSwitcher";
 
 const FavoritesPage = () => {
 	const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -9,22 +8,14 @@ const FavoritesPage = () => {
 		<div className='bg-base-200 flex-1 p-4 sm:p-6 md:p-10 min-h-screen pb-20 sm:pb-6'>
 			<div className='max-w-screen-lg mx-auto'>
 				<div className='mb-6 sm:mb-8 px-2 sm:px-0'>
-					<div className='flex justify-between items-start mb-4'>
-						<div className='flex-1'></div>
-						<div className='flex-1 text-center'>
-							<h1 className='font-bold text-2xl sm:text-3xl md:text-5xl bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent'>
-								My Favorites
-							</h1>
-							<p className='text-base-content/70 mt-2 text-sm sm:text-base'>
-								{favorites.length > 0 
-									? `You have ${favorites.length} saved recipe${favorites.length > 1 ? 's' : ''}`
-									: 'No favorites yet - start adding some!'}
-							</p>
-						</div>
-						<div className='flex-1 flex justify-end'>
-							<ThemeSwitcher />
-						</div>
-					</div>
+					<h1 className='font-bold text-2xl sm:text-3xl md:text-5xl bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent'>
+						My Favorites
+					</h1>
+					<p className='text-base-content/70 mt-2 text-sm sm:text-base'>
+						{favorites.length > 0 
+							? `You have ${favorites.length} saved recipe${favorites.length > 1 ? 's' : ''}`
+							: 'No favorites yet - start adding some!'}
+					</p>
 				</div>
 
 				{favorites.length === 0 && (
