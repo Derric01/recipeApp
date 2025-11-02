@@ -102,54 +102,54 @@ const LandingPage = () => {
 						</div>
 
 						{/* Right Content - Recipe Grid Preview */}
-						<div className='hidden lg:block relative'>
-							<div className='grid grid-cols-2 gap-4'>
+						<div className='relative mt-8 lg:mt-0'>
+							<div className='grid grid-cols-2 lg:grid-cols-2 gap-2 sm:gap-4'>
 								{/* Simulated Recipe Cards */}
-								<div className='space-y-4'>
-									<div className='card bg-base-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
+								<div className='space-y-2 sm:space-y-4'>
+									<div className='card bg-base-200 shadow-lg sm:shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
 										<img 
 											src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop' 
 											alt='Pizza' 
-											className='h-48 w-full object-cover'
+											className='h-32 sm:h-40 lg:h-48 w-full object-cover'
 										/>
-										<div className='card-body p-4'>
-											<h4 className='font-bold text-base-content'>Margherita Pizza</h4>
-											<p className='text-xs text-base-content/60'>Italian • 30 mins</p>
+										<div className='card-body p-2 sm:p-3 lg:p-4'>
+											<h4 className='font-bold text-xs sm:text-sm lg:text-base text-base-content'>Margherita Pizza</h4>
+											<p className='text-[10px] sm:text-xs text-base-content/60'>Italian • 30 mins</p>
 										</div>
 									</div>
-									<div className='card bg-base-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
+									<div className='card bg-base-200 shadow-lg sm:shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
 										<img 
 											src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop' 
 											alt='Salad' 
-											className='h-48 w-full object-cover'
+											className='h-32 sm:h-40 lg:h-48 w-full object-cover'
 										/>
-										<div className='card-body p-4'>
-											<h4 className='font-bold text-base-content'>Fresh Garden Salad</h4>
-											<p className='text-xs text-base-content/60'>Healthy • 15 mins</p>
+										<div className='card-body p-2 sm:p-3 lg:p-4'>
+											<h4 className='font-bold text-xs sm:text-sm lg:text-base text-base-content'>Fresh Garden Salad</h4>
+											<p className='text-[10px] sm:text-xs text-base-content/60'>Healthy • 15 mins</p>
 										</div>
 									</div>
 								</div>
-								<div className='space-y-4 mt-8'>
-									<div className='card bg-base-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
+								<div className='space-y-2 sm:space-y-4 mt-0 sm:mt-4 lg:mt-8'>
+									<div className='card bg-base-200 shadow-lg sm:shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
 										<img 
 											src='https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop' 
 											alt='Pancakes' 
-											className='h-48 w-full object-cover'
+											className='h-32 sm:h-40 lg:h-48 w-full object-cover'
 										/>
-										<div className='card-body p-4'>
-											<h4 className='font-bold text-base-content'>Blueberry Pancakes</h4>
-											<p className='text-xs text-base-content/60'>Breakfast • 20 mins</p>
+										<div className='card-body p-2 sm:p-3 lg:p-4'>
+											<h4 className='font-bold text-xs sm:text-sm lg:text-base text-base-content'>Blueberry Pancakes</h4>
+											<p className='text-[10px] sm:text-xs text-base-content/60'>Breakfast • 20 mins</p>
 										</div>
 									</div>
-									<div className='card bg-base-200 shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
+									<div className='card bg-base-200 shadow-lg sm:shadow-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 cursor-pointer'>
 										<img 
 											src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop' 
 											alt='Pasta' 
-											className='h-48 w-full object-cover'
+											className='h-32 sm:h-40 lg:h-48 w-full object-cover'
 										/>
-										<div className='card-body p-4'>
-											<h4 className='font-bold text-base-content'>Creamy Pasta</h4>
-											<p className='text-xs text-base-content/60'>Italian • 25 mins</p>
+										<div className='card-body p-2 sm:p-3 lg:p-4'>
+											<h4 className='font-bold text-xs sm:text-sm lg:text-base text-base-content'>Creamy Pasta</h4>
+											<p className='text-[10px] sm:text-xs text-base-content/60'>Italian • 25 mins</p>
 										</div>
 									</div>
 								</div>
