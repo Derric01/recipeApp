@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#4F46E5"/>
+  <path d="M256 100 L156 200 L206 200 L206 350 C206 365 218 377 233 377 L279 377 C294 377 306 365 306 350 L306 200 L356 200 Z" fill="white"/>
+  <circle cx="256" cy="390" r="15" fill="white"/>
+  <circle cx="220" cy="390" r="10" fill="white"/>
+  <circle cx="292" cy="390" r="10" fill="white"/>
+  <text x="256" y="450" font-family="Arial" font-size="40" fill="white" text-anchor="middle" font-weight="bold">Recipe</text>
+</svg>
