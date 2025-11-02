@@ -63,7 +63,7 @@ const MobileSidebar = () => {
 				<Heart size={"26"} className='cursor-pointer hover:text-pink-600' />
 				<span className='text-xs font-semibold'>Favorites</span>
 			</Link>
-			<div className='flex flex-col items-center gap-1 p-2'>
+			<div className='flex flex-col items-center gap-1 p-3 rounded-xl min-w-[80px]'>
 				<ThemeSwitcher />
 				<span className='text-xs font-semibold'>Theme</span>
 			</div>
